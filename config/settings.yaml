@@ -1,0 +1,37 @@
+extractors:
+  microsoft:
+    root_path: extractors/Microsoft-Extractor-Suite
+paths:
+  current_case: cases\case_20250718
+  dashboard_zip: superset_exports\dashboard_export_UAL.zip
+  fixed_dashboard_zip: superset_exports/test_dashboard.zip
+  input_dir: cases\case_20250718\saved
+  output_file: data/output_accessed.xlsx
+  processed_dir: data/processed/
+  superset_config: superset/superset_config.py
+postgres:
+  db_name: superset_fti
+  host: localhost
+  name: logs
+  password: admin123
+  port: 5432
+  sqlalchemy_uri: postgresql+psycopg2://superset_user_fti:admin123@localhost:5432/logs
+  user: superset_user_fti
+postgres_admin:
+  host: localhost
+  port: 5432
+  user: postgres
+scripts:
+  analyzer: analyzer/Microsoft-Analyzer-Suite/UAL-Analyzer.ps1
+  ip_parser: parser/Parser/IP-parser.py
+  parser: parser/Parser/ual-file-parser-final-withAuditData.py
+  suspicious_marker: scripts/matcher.py
+superset:
+  auto_import_dashboard: true
+  auto_import_dataset: true
+superset_admin:
+  email: .
+  firstname: superset
+  lastname: user
+  password: admin123
+  username: admin

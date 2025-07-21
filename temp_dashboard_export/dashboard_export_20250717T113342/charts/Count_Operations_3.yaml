@@ -1,0 +1,68 @@
+cache_timeout: null
+certification_details: null
+certified_by: null
+dataset_uuid: 0559323f-46db-491b-8c6e-67f13947e254
+description: null
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: creationdate
+  all_columns: []
+  allow_render_html: true
+  annotation_layers: []
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  dashboards:
+  - 2
+  datasource: 11__table
+  extra_form_data: {}
+  groupby:
+  - operations
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: operations
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 649
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: TEXT
+      type_generic: 1
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT(operations)
+    optionName: metric_o1hwwa92eo_i4e195scnr
+    sqlExpression: null
+  order_by_cols: []
+  order_desc: true
+  percent_metrics: []
+  query_mode: aggregate
+  row_limit: 1000
+  server_page_length: 10
+  show_cell_bars: true
+  table_timestamp_format: smart_date
+  temporal_columns_lookup:
+    creationdate: true
+  time_grain_sqla: P1D
+  viz_type: table
+query_context: '{"datasource":{"id":11,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["operations"],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":649,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_o1hwwa92eo_i4e195scnr","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":649,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_o1hwwa92eo_i4e195scnr","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"creationdate"}],"all_columns":[],"allow_render_html":true,"annotation_layers":[],"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","dashboards":[2],"datasource":"11__table","extra_form_data":{},"groupby":["operations"],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":649,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_o1hwwa92eo_i4e195scnr","sqlExpression":null}],"order_by_cols":[],"order_desc":true,"percent_metrics":[],"query_mode":"aggregate","row_limit":1000,"server_page_length":10,"show_cell_bars":true,"slice_id":3,"table_timestamp_format":"smart_date","temporal_columns_lookup":{"creationdate":true},"time_grain_sqla":"P1D","viz_type":"table","force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+slice_name: Count_Operations
+uuid: c734bd16-238d-4705-992b-3936d9717f4c
+version: 1.0.0
+viz_type: table

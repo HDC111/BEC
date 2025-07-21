@@ -1,0 +1,860 @@
+dashboard_title: MOCK
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 2167099a-9c87-489b-81f1-d52a1f9b7c88
+position:
+  CHART-explore-10-1:
+    children: []
+    id: CHART-explore-10-1
+    meta:
+      chartId: 7
+      height: 50
+      sliceName: Operation_Country
+      uuid: 5f9ab696-4d3f-43d3-8c47-00871895311d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-C9JQiMMhUaEMcBNtWLl6p
+    type: CHART
+  CHART-explore-12-1:
+    children: []
+    id: CHART-explore-12-1
+    meta:
+      chartId: 12
+      height: 50
+      sliceName: ISP
+      uuid: d1a5fd4c-b49a-4a4f-bbbd-9122ac2dd89d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZUjb3i6t_7qnTnH6hzOL5
+    type: CHART
+  CHART-explore-13-1:
+    children: []
+    id: CHART-explore-13-1
+    meta:
+      chartId: 13
+      height: 50
+      sliceName: Session_activity
+      uuid: fd185293-4996-4f36-a8ef-2633be4f3027
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZUjb3i6t_7qnTnH6hzOL5
+    type: CHART
+  CHART-explore-15-1:
+    children: []
+    id: CHART-explore-15-1
+    meta:
+      chartId: 15
+      height: 50
+      sliceName: logon_error
+      uuid: 3b97a143-0e47-4bc5-a65f-65d2a470b727
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-WMGmC5b8g4htVx3hvt89x
+    type: CHART
+  CHART-explore-16-1:
+    children: []
+    id: CHART-explore-16-1
+    meta:
+      chartId: 16
+      height: 50
+      sliceName: Highly_Suspicious_Activity
+      uuid: bdbb33ec-68ef-4c4a-b29c-32da4d70ddd2
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nh675VvbftQoSB6vVBfsk
+    type: CHART
+  CHART-explore-22-1:
+    children: []
+    id: CHART-explore-22-1
+    meta:
+      chartId: 22
+      height: 50
+      sliceName: Message_id_byactor
+      uuid: 04504151-9176-483f-ae99-bd4c099f8787
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sWi-Q-qy0G9xN-8eslMEq
+    type: CHART
+  CHART-explore-23-1:
+    children: []
+    id: CHART-explore-23-1
+    meta:
+      chartId: 23
+      height: 50
+      sliceName: File_accessed
+      uuid: e2644fef-9189-4090-a908-1a13519163e0
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-m6eovyvaVERgx2V-T9V51
+    type: CHART
+  CHART-explore-24-1:
+    children: []
+    id: CHART-explore-24-1
+    meta:
+      chartId: 24
+      height: 50
+      sliceName: Email_Sent_Subject
+      uuid: 6ce842e2-4972-4a24-96b9-f31ca55c782f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sWi-Q-qy0G9xN-8eslMEq
+    type: CHART
+  CHART-explore-3-1:
+    children: []
+    id: CHART-explore-3-1
+    meta:
+      chartId: 3
+      height: 50
+      sliceName: Count_Operations
+      uuid: d24a3e20-7c07-4687-925b-2526bc06369b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-m6eovyvaVERgx2V-T9V51
+    type: CHART
+  CHART-explore-6-1:
+    children: []
+    id: CHART-explore-6-1
+    meta:
+      chartId: 4
+      height: 50
+      sliceName: actor_count
+      uuid: cd68be3c-b8c5-43fc-8db2-a9ecd93645fd
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-m6eovyvaVERgx2V-T9V51
+    type: CHART
+  CHART-explore-8-1:
+    children: []
+    id: CHART-explore-8-1
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: Operation_City
+      uuid: 97b061b4-62ef-4fc6-b488-e267c4322c4a
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-C9JQiMMhUaEMcBNtWLl6p
+    type: CHART
+  CHART-explore-9-1:
+    children: []
+    id: CHART-explore-9-1
+    meta:
+      chartId: 8
+      height: 50
+      sliceName: Operations
+      uuid: f7bccb22-4112-4436-b20f-22aa846c5055
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-WMGmC5b8g4htVx3hvt89x
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-WMGmC5b8g4htVx3hvt89x
+    - ROW-C9JQiMMhUaEMcBNtWLl6p
+    - ROW-nh675VvbftQoSB6vVBfsk
+    - ROW-m6eovyvaVERgx2V-T9V51
+    - ROW-ZUjb3i6t_7qnTnH6hzOL5
+    - ROW-sWi-Q-qy0G9xN-8eslMEq
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: MOCK
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-C9JQiMMhUaEMcBNtWLl6p:
+    children:
+    - CHART-explore-8-1
+    - CHART-explore-10-1
+    id: ROW-C9JQiMMhUaEMcBNtWLl6p
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-WMGmC5b8g4htVx3hvt89x:
+    children:
+    - CHART-explore-9-1
+    - CHART-explore-15-1
+    id: ROW-WMGmC5b8g4htVx3hvt89x
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ZUjb3i6t_7qnTnH6hzOL5:
+    children:
+    - CHART-explore-12-1
+    - CHART-explore-13-1
+    id: ROW-ZUjb3i6t_7qnTnH6hzOL5
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-m6eovyvaVERgx2V-T9V51:
+    children:
+    - CHART-explore-6-1
+    - CHART-explore-23-1
+    id: ROW-m6eovyvaVERgx2V-T9V51
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-nh675VvbftQoSB6vVBfsk:
+    children:
+    - CHART-explore-16-1
+    - CHART-explore-3-1
+    id: ROW-nh675VvbftQoSB6vVBfsk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-sWi-Q-qy0G9xN-8eslMEq:
+    children:
+    - CHART-explore-22-1
+    - CHART-explore-24-1
+    id: ROW-sWi-Q-qy0G9xN-8eslMEq
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '4':
+      id: 4
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '6':
+      id: 6
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '7':
+      id: 7
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '8':
+      id: 8
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '12':
+      id: 12
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '13':
+      id: 13
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 15
+        - 16
+        - 22
+        - 23
+        - 24
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 16
+        - 22
+        - 23
+        - 24
+    '16':
+      id: 16
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 22
+        - 23
+        - 24
+    '22':
+      id: 22
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 23
+        - 24
+    '23':
+      id: 23
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 24
+    '24':
+      id: 24
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 12
+        - 13
+        - 15
+        - 16
+        - 22
+        - 23
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 15
+    - 16
+    - 22
+    - 23
+    - 24
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors:
+    COUNT(recordtype): '#1FA8C9'
+    004e27e9-6216-07d5-0922-34d9011e0ffb: '#1FA8C9'
+    Washington: '#1FA8C9'
+    Boydton: '#454E7C'
+    United States: '#1FA8C9'
+    MailItemsAccessed: '#1FA8C9'
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-C8jAFBb8YSppCw3Rhggrq
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: suspicious
+    filterType: filter_select
+    targets:
+    - column:
+        name: is_suspicious
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 5
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    tabsInScope: []
+  - id: NATIVE_FILTER-RoJU_wQgHykOB4vCG0ydW
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: operations
+    filterType: filter_select
+    targets:
+    - column:
+        name: operations
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    tabsInScope: []
+  - id: NATIVE_FILTER-HKOB8SgijMfA9FhbCORUW
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: session
+    filterType: filter_select
+    targets:
+    - column:
+        name: sessionid
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 5
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 11
+    - 12
+    tabsInScope: []
+  - id: NATIVE_FILTER-eD6aagzWFeoQj6QvYoXEe
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: ISP
+    filterType: filter_select
+    targets:
+    - column:
+        name: isp
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    tabsInScope: []
+  - id: NATIVE_FILTER-CAb2s0jxCT3E0ZRaY1Q66
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: ClientIP
+    filterType: filter_select
+    targets:
+    - column:
+        name: clientip
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds:
+    - NATIVE_FILTER-eD6aagzWFeoQj6QvYoXEe
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    tabsInScope: []
+  - id: NATIVE_FILTER-WgeSy_54Or4tntoO7WypS
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Record
+    filterType: filter_select
+    targets:
+    - column:
+        name: recordtype
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    tabsInScope: []
+  - id: NATIVE_FILTER-zdt4HEsXFR730_4L0L3T-
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Auth_type
+    filterType: filter_select
+    targets:
+    - column:
+        name: authenticationtype
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    tabsInScope: []
+  - id: NATIVE_FILTER-DV5smistpM2mNEHE0uy75
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Country
+    filterType: filter_select
+    targets:
+    - column:
+        name: country
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope: []
+    tabsInScope: []
+  - id: NATIVE_FILTER-s1VmWFuCQWm9nGi8aM0F6
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: useragent
+    filterType: filter_select
+    targets:
+    - column:
+        name: useragent
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    tabsInScope: []
+  - id: NATIVE_FILTER-GmvlPhI3y6GUpSjtZXDb-
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: true
+    name: Time
+    filterType: filter_select
+    targets:
+    - column:
+        name: creation_day
+      datasetUuid: 0559323f-46db-491b-8c6e-67f13947e254
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    tabsInScope: []
+  default_filters: '{}'
+version: 1.0.0

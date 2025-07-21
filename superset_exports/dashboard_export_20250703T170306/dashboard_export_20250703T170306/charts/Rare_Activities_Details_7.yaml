@@ -1,0 +1,61 @@
+slice_name: Rare_Activities_Details
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 14__table
+  viz_type: table
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    creationdate: true
+  all_columns:
+  - creationdate
+  - userid
+  - operations
+  - id
+  - target
+  - appid
+  - clientipaddress
+  - country
+  - city
+  - extendedproperties
+  - tasklist
+  - objectid
+  - clientappid
+  - actorinfostring
+  - authenticationtype
+  - issuccess
+  - mailboxownersid
+  - resultstatus
+  - sessionid
+  - useragent
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: creationdate
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: '{"datasource":{"id":14,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["creationdate","userid","operations","id","target","appid","clientipaddress","country","city","extendedproperties","tasklist","objectid","clientappid","actorinfostring","authenticationtype","issuccess","mailboxownersid","resultstatus","sessionid","useragent"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"14__table","viz_type":"table","query_mode":"raw","groupby":[],"time_grain_sqla":"P1D","temporal_columns_lookup":{"creationdate":true},"all_columns":["creationdate","userid","operations","id","target","appid","clientipaddress","country","city","extendedproperties","tasklist","objectid","clientappid","actorinfostring","authenticationtype","issuccess","mailboxownersid","resultstatus","sessionid","useragent"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","subject":"creationdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 7a09dcc2-edb8-457c-974e-824dec4a43d9
+version: 1.0.0
+dataset_uuid: e8416035-6feb-49b1-97c0-69978d5a2bca

@@ -1,0 +1,71 @@
+cache_timeout: null
+certification_details: null
+certified_by: null
+dataset_uuid: 0559323f-46db-491b-8c6e-67f13947e254
+description: null
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: creationdate
+  all_columns: []
+  allow_render_html: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  dashboards:
+  - 19
+  datasource: 31__table
+  extra_form_data: {}
+  groupby:
+  - isp
+  - actoripaddress
+  - clientip
+  - clientipaddress
+  - appid
+  - clientappid
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: operations
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 4279
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: TEXT
+      type_generic: 1
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT(operations)
+    optionName: metric_kd1znuf2xbr_rlun40hvr5
+    sqlExpression: null
+  order_by_cols: []
+  order_desc: true
+  percent_metrics: []
+  query_mode: aggregate
+  row_limit: 1000
+  show_cell_bars: true
+  slice_id: 12
+  table_timestamp_format: smart_date
+  temporal_columns_lookup:
+    creationdate: true
+  viz_type: table
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["isp","actoripaddress","clientip","clientipaddress","appid","clientappid"],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":4279,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_kd1znuf2xbr_rlun40hvr5","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":4279,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_kd1znuf2xbr_rlun40hvr5","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"31__table","viz_type":"table","slice_id":12,"query_mode":"aggregate","groupby":["isp","actoripaddress","clientip","clientipaddress","appid","clientappid"],"temporal_columns_lookup":{"creationdate":true},"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"operations","description":null,"expression":null,"filterable":true,"groupby":true,"id":4279,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(operations)","optionName":"metric_kd1znuf2xbr_rlun40hvr5","sqlExpression":null}],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"creationdate"}],"order_by_cols":[],"row_limit":1000,"order_desc":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+slice_name: ISP
+uuid: 465bb027-eaa1-429d-8428-cd01dbd29ec3
+version: 1.0.0
+viz_type: table

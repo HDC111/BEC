@@ -1,0 +1,40 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore Superset export and temporary folders
+dashboard_tmp/
+temp_dashboard_edit/
+temp_dashboard_unpack/
+
+# Ignore output and cache data
+Output/
+output_*/  # all output_UAL_chunk*
+cache/
+*.log
+*.xlsx
+*.csv
+
+# Ignore case-specific data
+cases/
+data/selected/
+data/data_backup/
+data/processed/
+
+
+# Ignore compiled Python files and object caches
+*.pyc
+*.pyo
+
+# Ignore database cache
+database/__pycache__/
+scripts/__pycache__/
+superset/__pycache__/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

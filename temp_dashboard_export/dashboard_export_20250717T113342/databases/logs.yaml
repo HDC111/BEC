@@ -1,0 +1,16 @@
+allow_ctas: false
+allow_cvas: false
+allow_dml: true
+allow_file_upload: false
+allow_run_async: false
+cache_timeout: null
+database_name: logs
+expose_in_sqllab: true
+extra:
+  engine_params: {}
+  metadata_cache_timeout: {}
+  metadata_params: {}
+  schemas_allowed_for_file_upload: []
+sqlalchemy_uri: postgresql+psycopg2://superset_user_fti:admin123@localhost:5432/logs
+uuid: 6e863c31-7cf8-41d4-abc9-0b2b72d74b2c
+version: 1.0.0

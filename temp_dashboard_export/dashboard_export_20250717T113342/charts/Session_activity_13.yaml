@@ -1,0 +1,85 @@
+cache_timeout: null
+certification_details: null
+certified_by: null
+dataset_uuid: 0559323f-46db-491b-8c6e-67f13947e254
+description: null
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: creationdate
+  annotation_layers: []
+  color_scheme: supersetColors
+  comparison_type: values
+  dashboards:
+  - 19
+  datasource: 31__table
+  extra_form_data: {}
+  forecastInterval: 0.8
+  forecastPeriods: 10
+  groupby:
+  - sessionid
+  legendOrientation: top
+  legendType: scroll
+  markerSize: 6
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      changed_on: '2025-07-06T19:14:37.281314'
+      column_name: operation
+      created_on: '2025-07-06T19:14:37.281314'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 4287
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: TEXT
+      type_generic: 1
+      uuid: c31efc1c-50af-4a0f-aa00-311382e65a70
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT(operation)
+    optionName: metric_nbqc68gvk_n6ob8g8kqbs
+    sqlExpression: null
+  only_total: true
+  opacity: 0.2
+  order_desc: true
+  rich_tooltip: true
+  row_limit: 10000
+  seriesType: line
+  show_empty_columns: true
+  show_legend: true
+  sort_series_type: sum
+  time_grain_sqla: P1D
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  truncate_metric: true
+  viz_type: echarts_timeseries_line
+  x_axis: creationdate
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  x_axis_time_format: smart_date
+  x_axis_title_margin: 15
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"creationdate","label":"creationdate","expressionType":"SQL"},"sessionid"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-06T19:14:37.281314","column_name":"operation","created_on":"2025-07-06T19:14:37.281314","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":4287,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"uuid":"94efbd2d-f70a-46bf-9894-8f1dffa58ab1","verbose_name":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(operation)","optionName":"metric_nbqc68gvk_n6ob8g8kqbs"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-06T19:14:37.281314","column_name":"operation","created_on":"2025-07-06T19:14:37.281314","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":4287,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"uuid":"94efbd2d-f70a-46bf-9894-8f1dffa58ab1","verbose_name":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(operation)","optionName":"metric_nbqc68gvk_n6ob8g8kqbs"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["sessionid"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["creationdate"],"columns":["sessionid"],"aggregates":{"COUNT(operation)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"COUNT(operation)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"31__table","viz_type":"echarts_timeseries_line","x_axis":"creationdate","time_grain_sqla":"P1D","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-06T19:14:37.281314","column_name":"operation","created_on":"2025-07-06T19:14:37.281314","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":4287,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"TEXT","type_generic":1,"uuid":"94efbd2d-f70a-46bf-9894-8f1dffa58ab1","verbose_name":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(operation)","optionName":"metric_nbqc68gvk_n6ob8g8kqbs"}],"groupby":["sessionid"],"adhoc_filters":[{"clause":"WHERE","subject":"creationdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","seriesType":"line","only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+slice_name: Session_activity
+uuid: 11316a14-d86c-4511-bcbc-2e61688d5193
+version: 1.0.0
+viz_type: echarts_timeseries_line

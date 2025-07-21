@@ -1,0 +1,94 @@
+table_name: Unique_MessageID_byactor
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: logs
+schema: public
+sql: "WITH filtered_logs AS (\r\n  SELECT\r\n    id,\r\n    actorinfostring,\r\n \
+  \   REPLACE(REPLACE(REPLACE(folders, '''', '\"'), 'None', 'null'), 'False', 'false')::jsonb\
+  \ AS folders_json\r\n  FROM logs.public.marked\r\n  WHERE\r\n    operation = 'MailItemsAccessed'\r\
+  \n    AND folders IS NOT NULL\r\n),\r\n\r\nexpanded_folders AS (\r\n  SELECT\r\n\
+  \    id,\r\n    actorinfostring,\r\n    jsonb_array_elements(folders_json) AS folder_entry\r\
+  \n  FROM filtered_logs\r\n),\r\n\r\nexpanded_items AS (\r\n  SELECT\r\n    id,\r\
+  \n    actorinfostring,\r\n    jsonb_array_elements(folder_entry -> 'FolderItems')\
+  \ AS item\r\n  FROM expanded_folders\r\n),\r\n\r\npaired_values AS (\r\n  SELECT\r\
+  \n    actorinfostring,\r\n    item ->> 'InternetMessageId' AS message_id,\r\n  \
+  \  (item ->> 'SizeInBytes')::bigint AS size\r\n  FROM expanded_items\r\n  WHERE\r\
+  \n    item ? 'SizeInBytes'  -- Keep all, including those with null or empty message_id\r\
+  \n),\r\n\r\ndeduplicated_messages AS (\r\n  SELECT DISTINCT\r\n    actorinfostring,\r\
+  \n    message_id,\r\n    size\r\n  FROM paired_values\r\n)\r\n\r\nSELECT\r\n  actorinfostring,\r\
+  \n  COUNT(*) AS unique_message_count,\r\n  SUM(size) AS total_size_bytes,\r\n  COUNT(*)\
+  \ FILTER (WHERE message_id IS NULL OR message_id = '') AS null_message_id_count\r\
+  \nFROM deduplicated_messages\r\nGROUP BY actorinfostring\r\nORDER BY total_size_bytes\
+  \ DESC;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 7172b937-0118-4dd9-ae8f-e3190d18c54c
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: total_size_bytes
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: null_message_id_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: unique_message_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: actorinfostring
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 706c0520-2093-442e-ae07-6b4bb06582a2

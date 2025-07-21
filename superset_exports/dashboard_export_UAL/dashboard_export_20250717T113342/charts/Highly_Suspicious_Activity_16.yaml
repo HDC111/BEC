@@ -1,0 +1,86 @@
+slice_name: Highly_Suspicious_Activity
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 31__table
+  viz_type: table
+  slice_id: 16
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup:
+    creationdate: true
+  all_columns:
+  - creationdate
+  - userid
+  - operations
+  - id
+  - target
+  - parameters
+  - appid
+  - clientipaddress
+  - resolvedclientip
+  - country
+  - city
+  - extendedproperties
+  - tasklist
+  - objectid
+  - clientappid
+  - actorinfostring
+  - authenticationtype
+  - issuccess
+  - resultstatus
+  - mailboxownersid
+  - sessionid
+  - useragent
+  - itemtype
+  - itemname
+  - affecteditems
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_zkxishflqtp_nmtqwkm3l
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: creationdate
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_3jluiuux5p_ihk1sl37jmd
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: operations LIKE 'Set-%' OR operations LIKE 'Add%' OR operations
+      LIKE 'Consent%' OR operations LIKE 'New%' OR operations LIKE '%Rule'
+    subject: null
+  order_by_cols: []
+  row_limit: 500
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 19
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(operations LIKE ''Set-%'' OR operations
+  LIKE ''Add%'' OR operations LIKE ''Consent%'' OR operations LIKE ''New%'' OR operations
+  LIKE ''%Rule'')"},"applied_time_extras":{},"columns":["creationdate","userid","operations","id","target","parameters","appid","clientipaddress","resolvedclientip","country","city","extendedproperties","tasklist","objectid","clientappid","actorinfostring","authenticationtype","issuccess","resultstatus","mailboxownersid","sessionid","useragent","itemtype","itemname","affecteditems"],"orderby":[],"annotation_layers":[],"row_limit":500,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"31__table","viz_type":"table","slice_id":16,"query_mode":"raw","groupby":[],"temporal_columns_lookup":{"creationdate":true},"all_columns":["creationdate","userid","operations","id","target","parameters","appid","clientipaddress","resolvedclientip","country","city","extendedproperties","tasklist","objectid","clientappid","actorinfostring","authenticationtype","issuccess","resultstatus","mailboxownersid","sessionid","useragent","itemtype","itemname","affecteditems"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_zkxishflqtp_nmtqwkm3l","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"creationdate"},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_3jluiuux5p_ihk1sl37jmd","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"operations
+  LIKE ''Set-%'' OR operations LIKE ''Add%'' OR operations LIKE ''Consent%'' OR operations
+  LIKE ''New%'' OR operations LIKE ''%Rule''","subject":null}],"order_by_cols":[],"row_limit":500,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: bdbb33ec-68ef-4c4a-b29c-32da4d70ddd2
+version: 1.0.0
+dataset_uuid: 0559323f-46db-491b-8c6e-67f13947e254

@@ -1,0 +1,94 @@
+always_filter_main_dttm: false
+cache_timeout: null
+catalog: logs
+columns:
+- advanced_data_type: null
+  column_name: total_size_bytes
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: DECIMAL
+  verbose_name: null
+- advanced_data_type: null
+  column_name: null_message_id_count
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: LONGINTEGER
+  verbose_name: null
+- advanced_data_type: null
+  column_name: unique_message_count
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: LONGINTEGER
+  verbose_name: null
+- advanced_data_type: null
+  column_name: actorinfostring
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: STRING
+  verbose_name: null
+database_uuid: 706c0520-2093-442e-ae07-6b4bb06582a2
+default_endpoint: null
+description: null
+extra: null
+fetch_values_predicate: null
+filter_select_enabled: true
+main_dttm_col: null
+metrics:
+- currency: null
+  d3format: null
+  description: null
+  expression: COUNT(*)
+  extra: null
+  metric_name: count
+  metric_type: count
+  verbose_name: COUNT(*)
+  warning_text: null
+normalize_columns: false
+offset: 0
+params: null
+schema: public
+sql: "WITH filtered_logs AS (\r\n  SELECT\r\n    id,\r\n    actorinfostring,\r\n \
+  \   REPLACE(REPLACE(REPLACE(folders, '''', '\"'), 'None', 'null'), 'False', 'false')::jsonb\
+  \ AS folders_json\r\n  FROM logs.public.marked\r\n  WHERE\r\n    operation = 'MailItemsAccessed'\r\
+  \n    AND folders IS NOT NULL\r\n),\r\n\r\nexpanded_folders AS (\r\n  SELECT\r\n\
+  \    id,\r\n    actorinfostring,\r\n    jsonb_array_elements(folders_json) AS folder_entry\r\
+  \n  FROM filtered_logs\r\n),\r\n\r\nexpanded_items AS (\r\n  SELECT\r\n    id,\r\
+  \n    actorinfostring,\r\n    jsonb_array_elements(folder_entry -> 'FolderItems')\
+  \ AS item\r\n  FROM expanded_folders\r\n),\r\n\r\npaired_values AS (\r\n  SELECT\r\
+  \n    actorinfostring,\r\n    item ->> 'InternetMessageId' AS message_id,\r\n  \
+  \  (item ->> 'SizeInBytes')::bigint AS size\r\n  FROM expanded_items\r\n  WHERE\r\
+  \n    item ? 'SizeInBytes'  -- Keep all, including those with null or empty message_id\r\
+  \n),\r\n\r\ndeduplicated_messages AS (\r\n  SELECT DISTINCT\r\n    actorinfostring,\r\
+  \n    message_id,\r\n    size\r\n  FROM paired_values\r\n)\r\n\r\nSELECT\r\n  actorinfostring,\r\
+  \n  COUNT(*) AS unique_message_count,\r\n  SUM(size) AS total_size_bytes,\r\n  COUNT(*)\
+  \ FILTER (WHERE message_id IS NULL OR message_id = '') AS null_message_id_count\r\
+  \nFROM deduplicated_messages\r\nGROUP BY actorinfostring\r\nORDER BY total_size_bytes\
+  \ DESC;\r\n"
+table_name: Unique_MessageID_byactor
+template_params: null
+uuid: 629618ab-b70a-4ebe-abc8-5137dcbc291d
+version: 1.0.0

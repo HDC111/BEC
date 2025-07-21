@@ -1,0 +1,61 @@
+slice_name: File_accessed
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 31__table
+  viz_type: table
+  slice_id: 23
+  query_mode: aggregate
+  groupby:
+  - sourcefilename
+  - operations
+  - country
+  temporal_columns_lookup:
+    creationdate: true
+  metrics: []
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: creationdate
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_nv3oqakt9y_3r8ylp25yi4
+  - expressionType: SIMPLE
+    subject: sourcefilename
+    operator: IS NOT NULL
+    operatorId: IS_NOT_NULL
+    comparator: null
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_r82h346e24g_6kkqga0ytt
+  order_by_cols: []
+  row_limit: 1000
+  order_desc: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 19
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"creationdate","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"sourcefilename","op":"IS NOT NULL"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["sourcefilename","operations","country"],"metrics":[],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"31__table","viz_type":"table","slice_id":23,"query_mode":"aggregate","groupby":["sourcefilename","operations","country"],"temporal_columns_lookup":{"creationdate":true},"metrics":[],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"creationdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_nv3oqakt9y_3r8ylp25yi4"},{"expressionType":"SIMPLE","subject":"sourcefilename","operator":"IS
+  NOT NULL","operatorId":"IS_NOT_NULL","comparator":null,"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_r82h346e24g_6kkqga0ytt"}],"order_by_cols":[],"row_limit":1000,"order_desc":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[19],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: e2644fef-9189-4090-a908-1a13519163e0
+version: 1.0.0
+dataset_uuid: 0559323f-46db-491b-8c6e-67f13947e254
